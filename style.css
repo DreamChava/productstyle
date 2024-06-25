@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body container */
+body {
+    background-color: rgba(243, 225, 228, 0.795);
+}
+
+/* parent container */
+.parent-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    max-width: 700px;
+    margin: 10rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+/* perfume container */
+img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* info container */
+.info {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: "Iceland", sans-serif;
+    margin: 1rem 0rem;
+}
+
+h1 {
+    font-family: "Croissant One", serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+p {
+    margin: 1rem 0rem;
+    font-family: "Montserrat", sans-serif;
+    padding: 0rem 0rem;
+    line-height: 1.5rem;
+}
+
+h2 {
+    margin: 1rem 0rem;
+    color: hsl(120, 75%, 29%);
+    font-size: 40px;
+
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Iceland", sans-serif;
+    gap: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 17px;
+}
+
+button {
+    background-color: hsl(120, 75%, 25%);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+     
+}
+
+button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* responsive design */
+@media only screen and (max-width: 700px) {
+    .parent-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 1rem;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
